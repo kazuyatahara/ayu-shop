@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清流の恵み 天然鮎 | [あなたの屋号や名前]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1200x800/3B82F6/FFFFFF?text=美しい川と鮎釣りの風景');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ヘッダー -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">[あなたの屋号]</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#products" class="text-gray-600 hover:text-blue-500 transition duration-300">商品紹介</a>
+                <a href="#blog" class="text-gray-600 hover:text-blue-500 transition duration-300">釣果ブログ</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-500 transition duration-300">私たちのこだわり</a>
+                <a href="#contact" class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition duration-300">お問い合わせ</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden px-6 pb-4">
+            <a href="#products" class="block py-2 text-gray-600 hover:text-blue-500">商品紹介</a>
+            <a href="#blog" class="block py-2 text-gray-600 hover:text-blue-500">釣果ブログ</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-500">私たちのこだわり</a>
+            <a href="#contact" class="block mt-2 bg-blue-500 text-white text-center px-4 py-2 rounded-full hover:bg-blue-600">お問い合わせ</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- メインビジュアル -->
+        <section class="hero-bg text-white h-[60vh] flex items-center justify-center">
+            <div class="bg-black bg-opacity-40 p-8 rounded-lg text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">清流が育んだ、極上の味。</h1>
+                <p class="text-lg md:text-2xl">獲れたての天然鮎を、あなたの食卓へ直送します。</p>
+            </div>
+        </section>
+
+        <!-- コンテンツセクション -->
+        <div class="container mx-auto px-6 py-12">
+             <!-- 商品紹介 -->
+            <section id="products" class="mb-16 scroll-mt-20">
+                <h2 class="text-3xl font-bold text-center mb-8">自慢の天然鮎</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- 商品カード 1 -->
+                    <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/600x400/A3E635/FFFFFF?text=獲れたて天然鮎" alt="天然鮎の写真" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="product-name text-xl font-bold mb-2">天然鮎 5尾セット (中サイズ)</h3>
+                            <p class="text-gray-600 mb-4">塩焼きに最適な中サイズの鮎です。独特の香りと深い味わいをお楽しみください。</p>
+                            <div class="product-price text-2xl font-bold text-blue-600 mb-4">3,500円 (税込)</div>
+                            <button class="buy-button w-full bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-600 transition duration-300">注文する</button>
+                        </div>
+                    </div>
+                    <!-- 商品カード 2 -->
+                    <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/600x400/60A5FA/FFFFFF?text=子持ち鮎" alt="子持ち鮎の写真" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="product-name text-xl font-bold mb-2">子持ち鮎 3尾セット (大サイズ)</h3>
+                            <p class="text-gray-600 mb-4">卵がぎっしり詰まった子持ち鮎。煮付けにすると絶品です。期間限定の味覚。</p>
+                            <div class="product-price text-2xl font-bold text-blue-600 mb-4">4,200円 (税込)</div>
+                            <button class="buy-button w-full bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-600 transition duration-300">注文する</button>
+                        </div>
+                    </div>
+                    <!-- 商品カード 3 -->
+                    <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300">
+                        <img src="https://placehold.co/600x400/FBBF24/FFFFFF?text=鮎の甘露煮" alt="鮎の甘露煮の写真" class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="product-name text-xl font-bold mb-2">特製 鮎の甘露煮 (3尾入り)</h3>
+                            <p class="text-gray-600 mb-4">骨まで柔らかく、じっくりと炊き上げました。ご飯のお供や贈答品にも最適です。</p>
+                            <div class="product-price text-2xl font-bold text-blue-600 mb-4">2,800円 (税込)</div>
+                            <button class="buy-button w-full bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-600 transition duration-300">注文する</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        // --- Googleフォーム連携スクリプト ---
+
+        // GoogleフォームのベースURL（viewformで終わる）
+        const GOOGLE_FORM_VIEW_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSfKnI5buYytmOBEX54-DHFLE6_jVEDx84EwFysxdstMv-B_xg/viewform'; 
+        
+        // 自動入力したい項目に対応するGoogleフォームのentry ID
+        const GFORM_ENTRIES = {
+            productName: 'entry.1708838320',
+            price:       'entry.1798393617'
+        };
+        
+        const buyButtons = document.querySelectorAll('.buy-button');
+        
+        buyButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                // クリックされたボタンに最も近い商品カード全体を取得
+                const card = e.target.closest('.product-card');
+                // 商品カードから商品名と価格のテキストを取得
+                const productName = card.querySelector('.product-name').textContent;
+                const productPrice = card.querySelector('.product-price').textContent;
+
+                // Googleフォームに渡すためのURLパラメータを作成
+                const params = new URLSearchParams();
+                params.append(GFORM_ENTRIES.productName, productName);
+                params.append(GFORM_ENTRIES.price, productPrice);
+                
+                // パラメータ付きのGoogleフォームURLを生成
+                const googleFormUrlWithParams = `${GOOGLE_FORM_VIEW_URL}?${params.toString()}`;
+
+                // 新しいタブでGoogleフォームを開く
+                window.open(googleFormUrlWithParams, '_blank');
+            });
+        });
+
+        // --- 基本的なメニュー開閉・スクロールスクリプト ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (!mobileMenu.classList.contains('hidden')) mobileMenu.classList.add('hidden');
+                if (targetId.length > 1) document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
